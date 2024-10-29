@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Adicionar Produto</h2>
+    <form id="addProductForm" action="">
+        <input type="text" id="nome" placeholder="Nome do Produto" name="nomeProduto" required>
+        <input type="number" id="preco" placeholder="Preço" name="precoProduto" step="0.01" required>
+        <textarea placeholder="Descrição" id="descricao" name="descricao" required></textarea>
+        <input type="number" id="quantidade" placeholder="Quantidade Disponível" name="qtdDisponivel" required>
+        <input type="file" id="file" name="imagemProduto" required>
+        <button type="submit" onclick="cadastrarProduto(event)">Adicionar Produto</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
